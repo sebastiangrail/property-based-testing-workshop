@@ -1,0 +1,3 @@
+[submodule "SwiftCheck"]
+	path = SwiftCheck
+	url = https://github.com/sebastiangrail/SwiftCheck.git
