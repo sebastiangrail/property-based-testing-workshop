@@ -27,6 +27,21 @@ public indirect enum List<T> {
         fatalError()
     }
     
+    /// Returns the prefix of the list of up to `length` items
+    func prefix(_ length: Int) -> List<T> {
+        fatalError()
+    }
+    
+    /// Returns the suffix of the list of up to `length` items
+    func suffix(_ length: Int) -> List<T> {
+        fatalError()
+    }
+    
+    /// Appends a list to the end of this list
+    func append(_ other: List<T>) -> List<T> {
+        fatalError()
+    }
+    
     /// Applies `transform` to all elements of the list
     func map<U>(transform: (T) -> U) -> List<U> {
         fatalError()
