@@ -42,6 +42,11 @@ public indirect enum List<T> {
         fatalError()
     }
     
+    /// Returns the list reversed
+    var reversed: List<T> {
+        fatalError()
+    }
+    
     /// Applies `transform` to all elements of the list
     func map<U>(transform: (T) -> U) -> List<U> {
         fatalError()
@@ -49,11 +54,6 @@ public indirect enum List<T> {
     
     /// Returns the list of elements that satisfy the predicate
     func filter(predicate: (T) -> Bool) -> List<T> {
-        fatalError()
-    }
-    
-    /// Returns the list reversed
-    var reversed: List<T> {
         fatalError()
     }
 }
