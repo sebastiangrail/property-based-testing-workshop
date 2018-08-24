@@ -15,6 +15,7 @@
 		9E3124F02127B900009DDE7B /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3124EF2127B900009DDE7B /* ExampleTests.swift */; };
 		9E3125122127B9C2009DDE7B /* SwiftCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3125082127B9A3009DDE7B /* SwiftCheck.framework */; };
 		9E3125142127BA86009DDE7B /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3125132127BA86009DDE7B /* Example.swift */; };
+		9E575B5F212F8B3C00774872 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E575B5E212F8B3C00774872 /* Expression.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		9E3124F12127B900009DDE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E3124FA2127B9A2009DDE7B /* SwiftCheck.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftCheck.xcodeproj; path = ../SwiftCheck/SwiftCheck.xcodeproj; sourceTree = "<group>"; };
 		9E3125132127BA86009DDE7B /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		9E575B5E212F8B3C00774872 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				9E3125132127BA86009DDE7B /* Example.swift */,
+				9E575B5E212F8B3C00774872 /* Expression.swift */,
 				9E3124DA2127B8FF009DDE7B /* AppDelegate.swift */,
 				9E3124DC2127B8FF009DDE7B /* ViewController.swift */,
 				9E3124DE2127B8FF009DDE7B /* Main.storyboard */,
@@ -329,6 +332,7 @@
 				9E3124DD2127B8FF009DDE7B /* ViewController.swift in Sources */,
 				9E3124DB2127B8FF009DDE7B /* AppDelegate.swift in Sources */,
 				9E3125142127BA86009DDE7B /* Example.swift in Sources */,
+				9E575B5F212F8B3C00774872 /* Expression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
