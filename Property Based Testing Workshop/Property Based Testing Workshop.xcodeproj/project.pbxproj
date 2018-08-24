@@ -18,6 +18,8 @@
 		9E575B5F212F8B3C00774872 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E575B5E212F8B3C00774872 /* Expression.swift */; };
 		9E575B66212F8BE400774872 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E575B65212F8BE400774872 /* Helpers.swift */; };
 		9E575B68212F8CB500774872 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E575B67212F8CB500774872 /* List.swift */; };
+		9E575B7F212F950500774872 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E575B7A212F94D600774872 /* SnapKit.framework */; };
+		9E575B81212F96D000774872 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E575B80212F96D000774872 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,27 @@
 			remoteGlobalIDString = 84DF75F71B0BD54600C912B0;
 			remoteInfo = "SwiftCheck-iOS";
 		};
+		9E575B79212F94D600774872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E575B74212F94D600774872 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		9E575B7B212F94D600774872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E575B74212F94D600774872 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit Tests";
+		};
+		9E575B7D212F94F900774872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E575B74212F94D600774872 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +118,8 @@
 		9E575B5E212F8B3C00774872 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
 		9E575B65212F8BE400774872 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		9E575B67212F8CB500774872 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		9E575B74212F94D600774872 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = ../SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
+		9E575B80212F96D000774872 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E575B7F212F950500774872 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				9E3124FA2127B9A2009DDE7B /* SwiftCheck.xcodeproj */,
+				9E575B74212F94D600774872 /* SnapKit.xcodeproj */,
 				9E3124D92127B8FF009DDE7B /* Property Based Testing Workshop */,
 				9E3124EE2127B900009DDE7B /* Property Based Testing WorkshopTests */,
 				9E3124D82127B8FF009DDE7B /* Products */,
@@ -142,6 +169,7 @@
 				9E3125132127BA86009DDE7B /* Example.swift */,
 				9E575B67212F8CB500774872 /* List.swift */,
 				9E575B5E212F8B3C00774872 /* Expression.swift */,
+				9E575B80212F96D000774872 /* Person.swift */,
 				9E3124DA2127B8FF009DDE7B /* AppDelegate.swift */,
 				9E3124DC2127B8FF009DDE7B /* ViewController.swift */,
 				9E3124DE2127B8FF009DDE7B /* Main.storyboard */,
@@ -182,6 +210,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9E575B75212F94D600774872 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E575B7A212F94D600774872 /* SnapKit.framework */,
+				9E575B7C212F94D600774872 /* SnapKit Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,6 +233,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9E575B7E212F94F900774872 /* PBXTargetDependency */,
 			);
 			name = "Property Based Testing Workshop";
 			productName = "Property Based Testing Workshop";
@@ -253,6 +291,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 9E575B75212F94D600774872 /* Products */;
+					ProjectRef = 9E575B74212F94D600774872 /* SnapKit.xcodeproj */;
+				},
+				{
 					ProductGroup = 9E3124FB2127B9A2009DDE7B /* Products */;
 					ProjectRef = 9E3124FA2127B9A2009DDE7B /* SwiftCheck.xcodeproj */;
 				},
@@ -308,6 +350,20 @@
 			remoteRef = 9E31250D2127B9A3009DDE7B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		9E575B7A212F94D600774872 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 9E575B79212F94D600774872 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E575B7C212F94D600774872 /* SnapKit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit Tests.xctest";
+			remoteRef = 9E575B7B212F94D600774872 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -335,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E575B81212F96D000774872 /* Person.swift in Sources */,
 				9E3124DD2127B8FF009DDE7B /* ViewController.swift in Sources */,
 				9E3124DB2127B8FF009DDE7B /* AppDelegate.swift in Sources */,
 				9E3125142127BA86009DDE7B /* Example.swift in Sources */,
@@ -364,6 +421,11 @@
 			isa = PBXTargetDependency;
 			name = "SwiftCheck-iOS";
 			targetProxy = 9E31250F2127B9B2009DDE7B /* PBXContainerItemProxy */;
+		};
+		9E575B7E212F94F900774872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			targetProxy = 9E575B7D212F94F900774872 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

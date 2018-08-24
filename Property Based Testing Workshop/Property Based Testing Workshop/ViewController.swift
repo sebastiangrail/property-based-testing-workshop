@@ -7,19 +7,25 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.backgroundColor = UIColor.darkGray
+        let vm = Person(
+            name: "Sebastian Grail",
+            description: "iOS developer at Canva",
+            avatar: #imageLiteral(resourceName: "avatar"))
+        let person = PersonCard(viewModel: vm)
+        view.addSubview(person)
+        person.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.width.equalTo(300).priority(.required)
+            make.height.equalTo(150).priority(.required)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

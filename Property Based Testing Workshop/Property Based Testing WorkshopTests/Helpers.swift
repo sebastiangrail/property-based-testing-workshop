@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import SwiftCheck
 
 func unaryFunctionGen<A, R>() -> Gen<(A) -> R> where A: Hashable, A: CoArbitrary, R: Arbitrary {
@@ -18,6 +19,33 @@ func binaryFunctionGen<A, B, R>() -> Gen<(A, B) -> R> where A: Hashable, B: Hash
         return { a, b in
             arrow.getArrow(Pair(first: a, second: b))
         }
+    }
+}
+
+extension UIImage {
+    static func image(withSize size: CGSize, color: UIColor) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        let context = UIGraphicsGetCurrentContext()!
+        
+        context.setFillColor(color.cgColor)
+        context.addRect(CGRect(origin: .zero, size: size))
+        context.drawPath(using: .fill)
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
+        return newImage
+    }
+}
+
+extension Sequence {
+    func all(predicate: (Element) -> Bool) -> Bool {
+        for element in self {
+            if !predicate(element) {
+                return false
+            }
+        }
+        return true
     }
 }
 
