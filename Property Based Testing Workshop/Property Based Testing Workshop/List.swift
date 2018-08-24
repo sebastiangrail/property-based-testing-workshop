@@ -8,7 +8,7 @@
 
 import Foundation
 
-indirect enum List<T> {
+public indirect enum List<T> {
     case empty
     case cons(T, List<T>)
     

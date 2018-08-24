@@ -17,7 +17,7 @@ public indirect enum Expression {
     case assignment(name: String, value: Expression, rest: Expression)
     case variable(String)
     
-    func evaluate(context: [String: Expression]) throws -> Double {
+    public func evaluate(context: [String: Expression]) throws -> Double {
         if Thread.callStackSymbols.count > 1000 {
             throw "Approaching stack overflow"
         }
