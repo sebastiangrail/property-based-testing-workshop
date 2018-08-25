@@ -64,3 +64,34 @@ extension List where T: Comparable {
         fatalError()
     }
 }
+
+extension List: Equatable where T: Equatable {
+    public static func ==(lhs: List, rhs: List) -> Bool {
+        switch (lhs, rhs) {
+        case (.empty, .empty):
+            return true
+        case (.cons(let leftHead, let leftTail), .cons(let rightHead, let rightTail)):
+            return leftHead == rightHead && leftTail == rightTail
+        case (.empty, _), (_, .empty):
+            return false
+        }
+    }
+    
+    func contains(_ element: T) -> Bool {
+        switch self {
+        case .empty:
+            return false
+        case .cons(let head, let tail):
+            return head == element || tail.contains(element)
+        }
+    }
+}
+
+extension List {
+    var isEmpty: Bool {
+        switch self {
+        case .empty: return true
+        case .cons: return false
+        }
+    }
+}
