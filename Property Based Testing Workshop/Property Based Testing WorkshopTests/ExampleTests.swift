@@ -1,11 +1,3 @@
-//
-//  ExampleTests.swift
-//  Property Based Testing WorkshopTests
-//
-//  Created by Sebastian Grail on 18/8/18.
-//  Copyright © 2018 Sebastian Grail. All rights reserved.
-//
-
 import XCTest
 import SwiftCheck
 @testable import Property_Based_Testing_Workshop
