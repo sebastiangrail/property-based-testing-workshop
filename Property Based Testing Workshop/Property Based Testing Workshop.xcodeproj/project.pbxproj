@@ -22,6 +22,8 @@
 		9E575B81212F96D000774872 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E575B80212F96D000774872 /* Person.swift */; };
 		9E575B9721318C4500774872 /* ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E575B9621318C4500774872 /* ListTests.swift */; };
 		9E575B9921318C8400774872 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E575B9821318C8400774872 /* PersonTests.swift */; };
+		9E575B9B213210FD00774872 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E575B9A213210FD00774872 /* Point.swift */; };
+		9E575B9D213211D600774872 /* PointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E575B9C213211D500774872 /* PointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,8 @@
 		9E575B80212F96D000774872 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9E575B9621318C4500774872 /* ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTests.swift; sourceTree = "<group>"; };
 		9E575B9821318C8400774872 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		9E575B9A213210FD00774872 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		9E575B9C213211D500774872 /* PointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				9E3125132127BA86009DDE7B /* Example.swift */,
+				9E575B9A213210FD00774872 /* Point.swift */,
 				9E575B67212F8CB500774872 /* List.swift */,
 				9E575B80212F96D000774872 /* Person.swift */,
 				9E575B5E212F8B3C00774872 /* Expression.swift */,
@@ -188,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				9E3124EF2127B900009DDE7B /* ExampleTests.swift */,
+				9E575B9C213211D500774872 /* PointTests.swift */,
 				9E575B9621318C4500774872 /* ListTests.swift */,
 				9E575B9821318C8400774872 /* PersonTests.swift */,
 				9E575B65212F8BE400774872 /* Helpers.swift */,
@@ -401,6 +407,7 @@
 				9E3124DD2127B8FF009DDE7B /* ViewController.swift in Sources */,
 				9E3124DB2127B8FF009DDE7B /* AppDelegate.swift in Sources */,
 				9E3125142127BA86009DDE7B /* Example.swift in Sources */,
+				9E575B9B213210FD00774872 /* Point.swift in Sources */,
 				9E575B68212F8CB500774872 /* List.swift in Sources */,
 				9E575B5F212F8B3C00774872 /* Expression.swift in Sources */,
 			);
@@ -412,6 +419,7 @@
 			files = (
 				9E3124F02127B900009DDE7B /* ExampleTests.swift in Sources */,
 				9E575B66212F8BE400774872 /* Helpers.swift in Sources */,
+				9E575B9D213211D600774872 /* PointTests.swift in Sources */,
 				9E575B9921318C8400774872 /* PersonTests.swift in Sources */,
 				9E575B9721318C4500774872 /* ListTests.swift in Sources */,
 			);
