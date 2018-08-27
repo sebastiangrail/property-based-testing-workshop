@@ -8,11 +8,12 @@
 
 import Foundation
 
-struct Point {
+struct Point: Equatable {
     var x: Int
     var y: Int
     
     mutating func shiftBy(dx: Int, dy: Int) {
-        fatalError()
+        x += dx
+        y += dy
     }
 }
