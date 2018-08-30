@@ -16,6 +16,9 @@ public struct Person {
     var avatar: UIImage
 }
 
+
+/// A card view for `Person`
+/// Property based testing can help us find the bugs (the commented out lines)
 public class PersonCard: UIView {
     public init(viewModel: Person) {
         super.init(frame: .zero)
@@ -53,6 +56,7 @@ public class PersonCard: UIView {
         avatarView.snp.makeConstraints { make in
             make.top.leading.equalToSuperview().inset(5)
             make.width.height.equalTo(imageSize).priority(ConstraintPriority.required)
+//            make.bottom.lessThanOrEqualTo(self.snp.bottom).inset(5)
         }
         avatarView.layer.cornerRadius = imageSize/2
         avatarView.layer.masksToBounds = true
@@ -67,6 +71,8 @@ public class PersonCard: UIView {
             make.top.equalTo(nameLabel.snp.bottom).offset(5).priority(.required)
             make.leading.equalTo(nameLabel)
             make.width.lessThanOrEqualToSuperview().multipliedBy(0.8)
+//            make.trailing.equalToSuperview().inset(5)
+//            make.bottom.lessThanOrEqualTo(self.snp.bottom).inset(5).priority(.low)
         }
     }
     
